@@ -278,6 +278,21 @@ class Field implements Renderable
     }
 
     /**
+     * Set form element id.
+     *
+     * @param string $id
+     *
+     * @return $this
+     *
+     * @author kaodouqifei
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+        return $this;
+    }
+
+    /**
      * Format the field column name.
      *
      * @param string $column
