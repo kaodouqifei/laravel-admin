@@ -558,6 +558,7 @@ SCRIPT;
     $('form#{$id}').submit(function (e) {
         e.preventDefault();
         $(this).find('div.cascade-group.hide :input').attr('disabled', true);
+        this.submit();
     });
 })();
 SCRIPT;
